@@ -9,8 +9,8 @@
 import Foundation
 
 extension String {
-
+    
     func trim(to maximumCharacters: Int) -> String {
-        return substringToIndex(startIndex.advancedBy(maximumCharacters)) + "..."
+        return substring(to: characters.index(startIndex, offsetBy: maximumCharacters)) + "..."
     }
 }
